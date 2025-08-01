@@ -434,7 +434,13 @@ class WindowsSystemMonitor:
             button_frame.columnconfigure(i, weight=1)
         
     def toggle_on_off(self):
-        """Easy ON/OFF toggle for users"""
+        """Easy ON/OFF toggle for users - Fixed with cooldown"""
+        # Prevent rapid toggling with cooldown
+        current_time = time.time()
+        if current_time - self._last_toggle_time < 2.0:  # 2 second cooldown
+            return
+        self._last_toggle_time = current_time
+        
         if self.recoil_enabled:
             # Turn OFF
             self.recoil_enabled = False
