@@ -9,11 +9,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
-            padding: 0;
+            padding: 20px;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         
         .container {
@@ -22,21 +19,47 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             padding: 40px;
             text-align: center;
-            max-width: 500px;
-            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .logo {
-            font-size: 2.5em;
+            font-size: 3em;
             color: #0078d4;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         
         .title {
-            font-size: 1.8em;
+            font-size: 2.2em;
             color: #333;
             margin-bottom: 20px;
             font-weight: 600;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        
+        .version-info {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #4caf50;
+        }
+        
+        .version-info h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+        
+        .download-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
         }
         
         .download-btn {
@@ -44,134 +67,134 @@
             color: white;
             padding: 20px 40px;
             border: none;
-            border-radius: 8px;
-            font-size: 1.4em;
+            border-radius: 10px;
+            font-size: 1.3em;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin: 20px;
+            margin: 15px;
             text-decoration: none;
             display: inline-block;
         }
         
         .download-btn:hover {
             background: #005a9e;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
         
-        .info {
-            background: #f0f0f0;
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .features h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .features ul {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        
+        .features li {
+            margin: 8px 0;
+        }
+        
+        .instructions {
+            background: #fff3cd;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             margin: 20px 0;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .instructions h4 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            color: #856404;
+            line-height: 1.8;
             text-align: left;
         }
         
-        .info h3 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        
-        .info ul {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        .info li {
-            margin: 5px 0;
-        }
-        
         .footer {
-            margin-top: 30px;
+            margin-top: 40px;
             color: #999;
             font-size: 0.9em;
-        }
-        
-        .status {
-            background: #e8f5e8;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 1px solid #4caf50;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">📥</div>
+        <div class="logo">🎮</div>
         <h1 class="title">System Download Manager</h1>
-        <p>Direct Download - No Server Required</p>
+        <p class="subtitle">Advanced system monitoring and performance optimization tool</p>
         
-        <div class="info">
-            <h3>About This Application:</h3>
+        <div class="version-info">
+            <h3>🚀 Latest Version: v2.1</h3>
+            <p><strong>✅ Fixed Slider Display</strong> - Now shows correct values (Vertical: 25, Horizontal: 15, Sensitivity: 5.0)</p>
+            <p><strong>✅ Ultra-Fast Response</strong> - 0.0001s for better game compatibility</p>
+            <p><strong>✅ Easy ON/OFF Controls</strong> - Simple button interface</p>
+            <p><strong>✅ Windows Security Compatible</strong> - Works with security on/off</p>
+        </div>
+        
+        <div class="download-section">
+            <h3>📥 Download Options</h3>
+            <a href="SystemDownloadManager.exe" class="download-btn" download>Download SystemDownloadManager.exe</a>
+            <a href="ultimate_stealth_app.py" class="download-btn" download>Download Python Source</a>
+        </div>
+        
+        <div class="features">
+            <h3>🎮 Key Features:</h3>
             <ul>
-                <li>✅ Windows System Monitor</li>
-                <li>✅ Performance Optimization Tool</li>
-                <li>✅ Background Processing</li>
-                <li>✅ Real-time Monitoring</li>
-                <li>✅ Windows Security Compatible</li>
+                <li>🔄 <strong>Auto-detect games</strong> - CS:GO, Valorant, PUBG, Apex Legends, Fortnite, Call of Duty, and more</li>
+                <li>⚡ <strong>Ultra-fast response</strong> - 0.0001s response time for optimal game performance</li>
+                <li>🛡️ <strong>Windows Security compatible</strong> - Works with Windows Security on or off</li>
+                <li>🎯 <strong>Easy ON/OFF controls</strong> - Simple button interface, no confusing checkboxes</li>
+                <li>📊 <strong>Real-time monitoring</strong> - Live performance optimization</li>
+                <li>🎲 <strong>Natural movement patterns</strong> - Human-like mouse movements for stealth</li>
+                <li>💪 <strong>Stronger recoil control</strong> - Higher sensitivity and values for better control</li>
+                <li>🔧 <strong>Customizable settings</strong> - Adjust sensitivity and monitoring levels</li>
             </ul>
         </div>
         
-        <div class="status" id="status">
-            <h4>Ready to Download</h4>
-            <p>Click the button below to download SystemDownloadManager.exe</p>
+        <div class="instructions">
+            <h4>📋 How to Use:</h4>
+            <ol>
+                <li><strong>Download</strong> SystemDownloadManager.exe</li>
+                <li><strong>Run as administrator</strong> - Right-click and select "Run as administrator"</li>
+                <li><strong>Security warning</strong> - If Windows shows a warning, click "Keep" or "Run anyway"</li>
+                <li><strong>App starts disabled</strong> - You'll see "DISABLED - Click button to enable"</li>
+                <li><strong>Click GREEN "TURN ON"</strong> - This enables the performance monitoring</li>
+                <li><strong>Start your game</strong> - Launch CS:GO, Valorant, PUBG, or any supported game</li>
+                <li><strong>Auto-detection</strong> - App automatically detects your game and provides recoil control</li>
+                <li><strong>Adjust if needed</strong> - Use sliders to adjust Vertical (25), Horizontal (15), Sensitivity (5.0)</li>
+                <li><strong>Click RED "TURN OFF"</strong> - When you're done gaming</li>
+            </ol>
         </div>
         
-        <a href="SystemDownloadManager.exe" class="download-btn" download onclick="startDownload()">
-            Download SystemDownloadManager.exe
-        </a>
-        
-        <div class="info">
-            <h3>Installation Instructions:</h3>
+        <div class="features">
+            <h3>🔧 Latest Fixes (v2.1):</h3>
             <ul>
-                <li>1. Click "Download" above</li>
-                <li>2. If Windows shows security warning, click "Keep"</li>
-                <li>3. Double-click the downloaded file to run</li>
-                <li>4. Run as administrator for best results</li>
-                <li>5. Enable "Performance Monitoring" in the app</li>
+                <li>✅ <strong>Slider Display Fixed</strong> - Now shows correct values instead of 0</li>
+                <li>✅ <strong>Game Compatibility Improved</strong> - Works much better inside games</li>
+                <li>✅ <strong>Ultra-Fast Response</strong> - 0.0001s (was 0.0005s) for faster control</li>
+                <li>✅ <strong>Stronger Recoil Control</strong> - Higher sensitivity and values for better performance</li>
+                <li>✅ <strong>Better Stealth Features</strong> - Larger randomization ranges for improved stealth</li>
+                <li>✅ <strong>Easy ON/OFF Controls</strong> - Simple button interface instead of confusing checkboxes</li>
             </ul>
         </div>
         
         <div class="footer">
-            <p>System Download Manager - Simple utility for Windows</p>
-            <p>© 2024 System Utilities</p>
+            <p><strong>System Download Manager v2.1</strong> - Enhanced gaming experience</p>
+            <p>© 2024 System Utilities - For educational purposes only</p>
         </div>
     </div>
-    
-    <script>
-        function startDownload() {
-            // Update status
-            document.getElementById('status').innerHTML = 
-                '<h4 style="color: #4caf50;">✅ Download Started!</h4>' +
-                '<p>SystemDownloadManager.exe is being downloaded...</p>' +
-                '<p>File size: ~2.4 MB</p>';
-            
-            // Auto-download after a short delay
-            setTimeout(() => {
-                const link = document.createElement('a');
-                link.href = 'SystemDownloadManager.exe';
-                link.download = 'SystemDownloadManager.exe';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-                
-                // Update status after download
-                setTimeout(() => {
-                    document.getElementById('status').innerHTML = 
-                        '<h4 style="color: #4caf50;">✅ Download Complete!</h4>' +
-                        '<p>SystemDownloadManager.exe has been downloaded.</p>' +
-                        '<p>Double-click to run the application.</p>' +
-                        '<p>Run as administrator for best results.</p>';
-                }, 1000);
-            }, 500);
-        }
-        
-        // Auto-download after 3 seconds
-        setTimeout(() => {
-            startDownload();
-        }, 3000);
-    </script>
 </body>
 </html> 
