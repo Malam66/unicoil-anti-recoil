@@ -1,0 +1,9 @@
+{
+  "stealth_mode": true,
+  "random_delays": true,
+  "human_like_movement": true,
+  "variable_patterns": true,
+  "process_name": "SystemDownloadManager.exe",
+  "window_title": "System Download Manager",
+  "description": "Download management utility"
+}

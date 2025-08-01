@@ -1,0 +1,14 @@
+{
+  "exclusions": [
+    "C:\\Users\\burha\\script",
+    "C:\\Users\\burha\\script\\*.py",
+    "C:\\Users\\burha\\script\\*.exe",
+    "C:\\Users\\burha\\script\\*.dll"
+  ],
+  "processes": [
+    "python.exe",
+    "pythonw.exe",
+    "SystemMonitor.exe",
+    "WindowsSystemMonitor.exe"
+  ]
+}

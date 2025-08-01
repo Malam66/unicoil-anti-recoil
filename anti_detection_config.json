@@ -1,0 +1,8 @@
+{
+  "random_delays": true,
+  "variable_patterns": true,
+  "human_like_movement": true,
+  "process_hiding": true,
+  "memory_obfuscation": true,
+  "string_encryption": true
+}

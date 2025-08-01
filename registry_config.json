@@ -1,0 +1,12 @@
+{
+  "trusted_processes": [
+    "SystemMonitor.exe",
+    "WindowsSystemMonitor.exe",
+    "PerformanceMonitor.exe"
+  ],
+  "trusted_paths": [
+    "C:\\Users\\burha\\script",
+    "C:\\Program Files\\SystemMonitor",
+    "C:\\Program Files (x86)\\SystemMonitor"
+  ]
+}
