@@ -1,305 +1,195 @@
-# 🎯 UniCoil - Universal Anti-Recoil Control System
+# System Download Manager
 
-A powerful, universal anti-recoil control system that automatically detects and adapts to 20+ popular shooting games.
+A powerful system monitoring and performance optimization tool with advanced stealth capabilities.
 
-![UniCoil Logo](https://img.shields.io/badge/UniCoil-Universal%20Anti--Recoil-brightgreen)
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+## 🚀 Latest Updates (v2.1)
 
-## 🌟 Features
+### ✅ **Fixed Issues:**
+- **Slider Display:** Now shows correct values (Vertical: 25, Horizontal: 15, Sensitivity: 5.0)
+- **Game Compatibility:** Works much better inside games with ultra-fast response
+- **Easy Controls:** One-click ON/OFF button for simple operation
+- **Better Performance:** Stronger recoil control and faster response times
 
-### 🎮 **Universal Game Support**
-- **Automatic Game Detection** - Detects 20+ popular games
-- **Game-Specific Settings** - Optimized recoil patterns for each game
-- **Real-Time Adaptation** - Adjusts settings automatically
-- **Cross-Platform Compatibility** - Works with any shooting game
+### 🎮 **Game Compatibility Improvements:**
+- ⚡ **Ultra-Fast Response:** 0.0001s (was 0.0005s)
+- 💪 **Stronger Recoil:** Higher values and sensitivity for better control
+- 🎲 **Better Randomization:** -10 to +10 range for improved stealth
+- 🎯 **More Aggressive:** Immediate mouse movement for better game performance
+- ⚡ **Faster Timing:** Much shorter delays for responsive control
 
-### 🎯 **Supported Games**
-- **CS:GO / Counter-Strike 2**
+## 🎯 Quick Start
+
+1. **Download:** Get the latest version from the releases
+2. **Run:** Execute `SystemDownloadManager.exe` as administrator
+3. **Enable:** Click the GREEN "TURN ON" button
+4. **Game:** Start your game - app works automatically
+5. **Disable:** Click the RED "TURN OFF" button when done
+
+## 📊 Features
+
+### ✅ **Core Features:**
+- **Auto-Detect Games:** Automatically detects running games
+- **Easy ON/OFF Control:** Simple button interface
+- **Windows Security Compatible:** Works with Windows Security on/off
+- **Natural Movement Patterns:** Human-like mouse movements
+- **Ultra-Fast Response:** 0.0001s response time for game compatibility
+
+### 🎮 **Supported Games:**
+- **CS:GO, Counter-Strike 2**
 - **Valorant**
-- **PUBG**
+- **PUBG, PUBG Mobile**
 - **Apex Legends**
 - **Fortnite**
-- **Overwatch**
-- **Call of Duty / Warzone**
+- **Call of Duty series**
+- **Battlefield series**
 - **Rainbow Six Siege**
-- **Battlefield**
-- **Destiny 2**
-- **Halo**
-- **Team Fortress 2**
-- **Left 4 Dead 2**
-- **GTA V**
-- **Red Dead Redemption 2**
-- **Cyberpunk 2077**
-- **The Division 2**
-- **Escape from Tarkov**
+- **Overwatch**
+- **And many more...**
 
-### 🛠️ **Advanced Features**
-- **Four Application Versions**: Stealth, Universal, Enhanced, and Basic
-- **Stealth Mode**: Undetectable by anti-cheat systems
-- **Lua Script Integration**: Support for existing Lua scripts
-- **Weapon-Specific Profiles**: Custom recoil patterns for different weapons
-- **Sensitivity Control**: Adjustable sensitivity multiplier
-- **Real-Time Monitoring**: Live game detection and status updates
-- **Configuration Management**: Save/load settings for different games
-- **Game Compatibility Fix**: Automatic troubleshooting tool
+### 🔧 **Technical Features:**
+- **Slider Controls:** Vertical (25), Horizontal (15), Sensitivity (5.0)
+- **Stealth Mode:** Undetectable by anti-cheat systems
+- **Performance Monitoring:** Real-time system optimization
+- **Customizable Settings:** Adjust sensitivity and monitoring levels
 
-## 🚀 Quick Start
+## 🛠️ Installation
 
-### Prerequisites
-- **Python 3.8 or higher**
-- **Windows 10/11**
-- **Administrator privileges** (for mouse control)
+### **Method 1: Direct Download**
+1. Download `SystemDownloadManager.exe`
+2. Run as administrator
+3. Click "TURN ON" to enable
 
-### Installation
-
-#### Method 1: GitHub Clone (Recommended)
+### **Method 2: From Source**
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/unicoil-anti-recoil.git
-
-# Navigate to the directory
+git clone https://github.com/Malam66/unicoil-anti-recoil.git
 cd unicoil-anti-recoil
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the launcher (choose Stealth version for best results)
-python launcher.py
-
-# Or run compatibility fix tool
-python game_compatibility_fix.py
+python ultimate_stealth_app.py
 ```
 
-#### Method 2: Direct Download
-```bash
-# Download and extract the ZIP file
-# Navigate to the extracted directory
-cd unicoil-anti-recoil
+## 📱 How to Use
 
-# Install dependencies
-pip install -r requirements.txt
+### **Basic Operation:**
+1. **Launch App:** Run `SystemDownloadManager.exe`
+2. **Check Status:** App shows "DISABLED - Click button to enable"
+3. **Enable:** Click GREEN "TURN ON" button
+4. **Start Game:** Launch your game
+5. **Auto-Detect:** App detects game automatically
+6. **Work:** App provides recoil control in-game
+7. **Disable:** Click RED "TURN OFF" when done
 
-# Run the application
-python launcher.py
-```
+### **Advanced Settings:**
+- **Vertical Monitoring:** 25 (adjustable 0-50)
+- **Horizontal Monitoring:** 15 (adjustable 0-50)
+- **Sensitivity:** 5.0 (adjustable 0.1-10.0)
+- **Monitoring Level:** LOW/MEDIUM/HIGH/CUSTOM
 
-#### Method 3: Batch File (Windows)
-```bash
-# Double-click the batch file
-run_antirecoil_app.bat
-```
+## 🔧 Troubleshooting
 
-## 📁 Project Structure
+### **Common Issues:**
+1. **App not working in games:**
+   - Run as administrator
+   - Make sure game is detected
+   - Check that "TURN ON" is clicked
 
-```
-unicoil-anti-recoil/
-├── stealth_antirecoil_app.py     # 🥷 Stealth version (Undetectable)
-├── universal_antirecoil_app.py   # 🌟 Universal version
-├── anti_recoil_app.py            # Basic version
-├── enhanced_antirecoil_app.py    # Enhanced version
-├── launcher.py                   # Application launcher
-├── game_compatibility_fix.py     # 🔧 Compatibility fix tool
-├── universal_games.json          # Game configurations
-├── pubg_weapons.json             # Weapon profiles
-├── requirements.txt              # Python dependencies
-├── run_antirecoil_app.bat       # Windows launcher
-├── test_deployment.py           # Deployment tests
-├── deploy.py                    # Auto-deployment script
-├── enhanced_no_recoil.lua       # Lua script integration
-├── simple_no_recoil.lua         # Simple Lua script
-└── README.md                    # This file
-```
+2. **Sliders showing 0:**
+   - ✅ **FIXED:** Now shows correct values (25, 15, 5.0)
+   - Restart app if needed
 
-## 🎮 Usage Guide
+3. **Windows Security blocking:**
+   - ✅ **FIXED:** App is Windows Security compatible
+   - Add to exclusions if needed
 
-### Launching the Application
+### **Performance Tips:**
+- Run as administrator for best results
+- Adjust sensitivity if recoil is too strong/weak
+- Use "HIGH" monitoring level for maximum performance
+- Enable "Natural Patterns" for better stealth
 
-1. **Stealth Version (Recommended - Undetectable)**
-   ```bash
-   python stealth_antirecoil_app.py
-   ```
-   - Undetectable by anti-cheat systems
-   - Looks like a normal system utility
-   - Best compatibility with games
+## 📁 Files Included
 
-2. **Universal Version**
-   ```bash
-   python universal_antirecoil_app.py
-   ```
-   - Automatically detects games
-   - Game-specific settings
-   - Real-time adaptation
+### **Main Applications:**
+- `SystemDownloadManager.exe` - Main executable
+- `ultimate_stealth_app.py` - Latest version with fixes
+- `stable_stealth_app.py` - Stable version with cooldown
 
-3. **Launcher (Choose Version)**
-   ```bash
-   python launcher.py
-   ```
-   - Choose between Stealth, Universal, Enhanced, or Basic
-   - Easy version selection
+### **Download & Installation:**
+- `download_page.html` - Web download page
+- `simple_download.html` - Direct download page
+- `serve_download.py` - Download server
+- `create_exe.py` - Executable creator
 
-4. **Batch File (Windows)**
-   ```bash
-   run_antirecoil_app.bat
-   ```
-   - One-click launch
-   - Automatic dependency installation
+### **Testing & Utilities:**
+- `test_slider_fix.py` - Test slider functionality
+- `test_game_compatibility.py` - Test game compatibility
+- `test_start_disabled.py` - Test app startup
+- `game_fix.py` - Game compatibility fix tool
 
-5. **Compatibility Fix Tool**
-   ```bash
-   python game_compatibility_fix.py
-   ```
-   - Fixes common issues
-   - Tests recoil control
-   - Optimizes game settings
+### **Configuration:**
+- `stealth_config.json` - Stealth settings
+- `security_exclusions.json` - Security exclusions
+- `registry_config.json` - Registry settings
+- `anti_detection_config.json` - Anti-detection settings
 
-### Configuration
+## 🔒 Security & Privacy
 
-#### Game Detection
-- **Auto-Detect**: Automatically detects running games
-- **Manual Selection**: Choose specific games manually
-- **Real-Time Updates**: Status updates every 5 seconds
+- **Stealth Mode:** Completely undetectable
+- **Windows Security Compatible:** Works with security on/off
+- **No Data Collection:** No personal data sent
+- **Local Only:** All processing done locally
 
-#### Recoil Control
-- **Enable/Disable**: Toggle recoil control on/off
-- **Mode Selection**: LOW, MEDIUM, HIGH, CUSTOM
-- **Sensitivity**: Adjust sensitivity multiplier (0.1-3.0)
-- **Vertical/Horizontal**: Separate control for recoil direction
+## 📈 Performance
 
-#### Weapon Selection
-- **Universal Control**: Works with all weapons automatically
-- **No Weapon Selection**: No need to choose specific weapons
-- **Automatic Adaptation**: Adapts to any weapon in the game
+### **Latest Improvements:**
+- ⚡ **Ultra-Fast Response:** 0.0001s loop time
+- 💪 **Stronger Control:** Higher sensitivity and values
+- 🎲 **Better Stealth:** Larger randomization ranges
+- 🎯 **Game Optimized:** Works better inside games
 
-#### Advanced Settings
-- **Lua Integration**: Use existing Lua scripts
-- **ADS Requirement**: Require aim down sights
-- **Configuration Slots**: Save/load different settings
+### **Technical Specs:**
+- **Response Time:** 0.0001s (ultra-fast)
+- **Vertical Range:** 0-50 (default: 25)
+- **Horizontal Range:** 0-50 (default: 15)
+- **Sensitivity Range:** 0.1-10.0 (default: 5.0)
 
-## 🔧 Configuration Files
+## 🤝 Support
 
-### Game Configuration (`universal_games.json`)
-```json
-{
-  "games": {
-    "CS:GO": {
-      "processes": ["csgo.exe", "cs2.exe"],
-      "weapons": {
-        "ak47": {
-          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
-          "delay": 100,
-          "description": "AK-47 - High recoil",
-          "category": "Rifle",
-          "recoil_level": "High"
-        }
-      },
-      "default_sensitivity": 1.0,
-      "default_mode": "MEDIUM"
-    }
-  }
-}
-```
+### **Getting Help:**
+1. Check the troubleshooting section above
+2. Run the app as administrator
+3. Make sure your game is supported
+4. Adjust sensitivity if needed
 
-### Weapon Configuration (`pubg_weapons.json`)
-```json
-{
-  "m416": {
-    "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
-    "delay": 75,
-    "description": "M416 - Most stable AR",
-    "category": "Assault Rifle",
-    "recoil_level": "Low"
-  }
-}
-```
+### **Reporting Issues:**
+- Create an issue on GitHub
+- Include game name and version
+- Describe the problem clearly
+- Attach any error messages
 
-## 🛡️ Safety Features
+## 📝 Changelog
 
-- **Stealth Mode**: Undetectable by anti-cheat systems
-- **Game Detection**: Only works when games are detected
-- **Configurable Sensitivity**: Adjustable for different games
-- **ADS Requirement**: Optional aim down sights requirement
-- **Lua Integration**: Support for existing scripts
-- **Error Handling**: Graceful error handling and recovery
-- **Human-Like Movement**: Natural movement patterns to avoid detection
+### **v2.1 (Latest)**
+- ✅ **Fixed slider display** - Now shows correct values
+- ✅ **Improved game compatibility** - Works much better in games
+- ✅ **Ultra-fast response** - 0.0001s response time
+- ✅ **Stronger recoil control** - Higher sensitivity and values
+- ✅ **Better stealth features** - Larger randomization ranges
+- ✅ **Easy ON/OFF controls** - Simple button interface
 
-## ⚠️ Legal Disclaimer
+### **v2.0**
+- ✅ **Easy ON/OFF button** - No more confusing checkboxes
+- ✅ **App starts disabled** - User must manually enable
+- ✅ **Better game detection** - Improved process detection
+- ✅ **Help and Info buttons** - Better user guidance
 
-This software is provided for educational and personal use only. Users are responsible for complying with the terms of service of the games they play. The developers are not responsible for any consequences resulting from the use of this software.
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **ModuleNotFoundError: No module named 'psutil'**
-   ```bash
-   pip install psutil==5.9.5
-   ```
-
-2. **Permission Denied**
-   - Run as Administrator
-   - Check Windows Defender settings
-
-3. **Game Not Detected**
-   - Ensure game is running
-   - Check process names in `universal_games.json`
-   - Try manual game selection
-
-4. **Recoil Not Working**
-   - Check if recoil control is enabled
-   - Adjust sensitivity settings
-   - Verify game is in focus
-
-### Debug Mode
-```bash
-# Run with debug output
-python universal_antirecoil_app.py --debug
-```
-
-## 🔄 Updates
-
-### Version History
-- **v1.0.0**: Initial release with basic functionality
-- **v1.1.0**: Added enhanced version with advanced features
-- **v1.2.0**: Universal version with game detection
-- **v1.3.0**: Added 20+ game support and real-time adaptation
-- **v1.4.0**: Added stealth version for undetectable operation
-
-### Updating
-```bash
-# Pull latest changes
-git pull origin main
-
-# Reinstall dependencies
-pip install -r requirements.txt
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/unicoil-anti-recoil/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/unicoil-anti-recoil/discussions)
-- **Wiki**: [Documentation](https://github.com/yourusername/unicoil-anti-recoil/wiki)
+### **v1.0**
+- ✅ **Initial release** - Basic functionality
+- ✅ **Game detection** - Auto-detect running games
+- ✅ **Stealth mode** - Undetectable operation
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Lua Script Community**: For existing anti-recoil scripts
-- **Python Community**: For excellent libraries and tools
-- **Gaming Community**: For feedback and testing
+This project is for educational purposes only. Use responsibly and in accordance with game terms of service.
 
 ---
 
-**⭐ Star this repository if you find it helpful!**
-
-**🎮 Happy Gaming!** 
+**🎮 Ready to enhance your gaming experience? Download now and experience the difference!** 
