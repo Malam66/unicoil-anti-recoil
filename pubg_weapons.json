@@ -1,0 +1,93 @@
+{
+  "m416": {
+    "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3], [-1,3], [0,3], [1,3], [-1,3], [0,3]],
+    "delay": 75,
+    "description": "M416 - Most stable AR",
+    "category": "Assault Rifle",
+    "recoil_level": "Low"
+  },
+  "akm": {
+    "pattern": [[0,5], [2,5], [-2,5], [0,5], [2,5], [-2,5], [0,5], [2,5], [-2,5], [0,5]],
+    "delay": 100,
+    "description": "AKM - High recoil",
+    "category": "Assault Rifle",
+    "recoil_level": "High"
+  },
+  "scar-l": {
+    "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2]],
+    "delay": 70,
+    "description": "SCAR-L - Low recoil",
+    "category": "Assault Rifle",
+    "recoil_level": "Very Low"
+  },
+  "g36c": {
+    "pattern": [[0,2], [1,2], [-1,2], [0,2], [1,2], [-1,2], [0,2], [1,2], [-1,2], [0,2]],
+    "delay": 65,
+    "description": "G36C - Moderate recoil",
+    "category": "Assault Rifle",
+    "recoil_level": "Medium"
+  },
+  "aug": {
+    "pattern": [[0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1]],
+    "delay": 60,
+    "description": "AUG - Very low recoil",
+    "category": "Assault Rifle",
+    "recoil_level": "Very Low"
+  },
+  "ump45": {
+    "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2]],
+    "delay": 50,
+    "description": "UMP45 - SMG recoil",
+    "category": "SMG",
+    "recoil_level": "Low"
+  },
+  "vector": {
+    "pattern": [[0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1], [0,1]],
+    "delay": 40,
+    "description": "Vector - Very low recoil",
+    "category": "SMG",
+    "recoil_level": "Very Low"
+  },
+  "pp19": {
+    "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2], [0,2]],
+    "delay": 45,
+    "description": "PP19 - Low recoil",
+    "category": "SMG",
+    "recoil_level": "Low"
+  },
+  "m249": {
+    "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4], [-1,4], [0,4], [1,4], [-1,4], [0,4]],
+    "delay": 90,
+    "description": "M249 - LMG recoil",
+    "category": "LMG",
+    "recoil_level": "High"
+  },
+  "dp28": {
+    "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3], [-1,3], [0,3], [1,3]],
+    "delay": 85,
+    "description": "DP28 - Moderate recoil",
+    "category": "LMG",
+    "recoil_level": "Medium"
+  },
+  "default": {
+    "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+    "delay": 80,
+    "description": "Default pattern",
+    "category": "Generic",
+    "recoil_level": "Medium"
+  },
+  "strong_recoil": {
+    "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+    "delay": 100,
+    "description": "Strong recoil pattern",
+    "category": "Generic",
+    "recoil_level": "High"
+  },
+  "weak_recoil": {
+    "pattern": [[0,1], [0,1], [0,1], [0,1], [0,1]],
+    "delay": 60,
+    "description": "Weak recoil pattern",
+    "category": "Generic",
+    "recoil_level": "Low"
+  }
+} 

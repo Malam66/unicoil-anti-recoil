@@ -1,0 +1,465 @@
+{
+  "games": {
+    "CS:GO": {
+      "processes": ["csgo.exe", "cs2.exe"],
+      "weapons": {
+        "ak47": {
+          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
+          "delay": 100,
+          "description": "AK-47 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "m4a1": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 80,
+          "description": "M4A1 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "awp": {
+          "pattern": [[0,10], [0,10]],
+          "delay": 200,
+          "description": "AWP - Sniper recoil",
+          "category": "Sniper",
+          "recoil_level": "Very High"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Valorant": {
+      "processes": ["VALORANT.exe", "VALORANT-Win64-Shipping.exe"],
+      "weapons": {
+        "vandal": {
+          "pattern": [[0,5], [1,5], [-1,5], [0,5], [1,5]],
+          "delay": 90,
+          "description": "Vandal - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "phantom": {
+          "pattern": [[0,3], [0,3], [0,3], [0,3], [0,3]],
+          "delay": 70,
+          "description": "Phantom - Low recoil",
+          "category": "Rifle",
+          "recoil_level": "Low"
+        },
+        "operator": {
+          "pattern": [[0,8], [0,8]],
+          "delay": 150,
+          "description": "Operator - Sniper",
+          "category": "Sniper",
+          "recoil_level": "Very High"
+        }
+      },
+      "default_sensitivity": 1.2,
+      "default_mode": "MEDIUM"
+    },
+    "PUBG": {
+      "processes": ["PUBG.exe", "TslGame.exe"],
+      "weapons": {
+        "akm": {
+          "pattern": [[0,5], [2,5], [-2,5], [0,5], [2,5]],
+          "delay": 100,
+          "description": "AKM - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "m416": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 75,
+          "description": "M416 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "scar-l": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 70,
+          "description": "SCAR-L - Low recoil",
+          "category": "Rifle",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "Apex Legends": {
+      "processes": ["r5apex.exe", "Apex.exe"],
+      "weapons": {
+        "r301": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 85,
+          "description": "R-301 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "flatline": {
+          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
+          "delay": 95,
+          "description": "Flatline - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "spitfire": {
+          "pattern": [[0,5], [1,5], [-1,5], [0,5], [1,5]],
+          "delay": 100,
+          "description": "Spitfire - LMG recoil",
+          "category": "LMG",
+          "recoil_level": "High"
+        }
+      },
+      "default_sensitivity": 1.3,
+      "default_mode": "HIGH"
+    },
+    "Fortnite": {
+      "processes": ["FortniteClient-Win64-Shipping.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 80,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "smg": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 60,
+          "description": "SMG - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Overwatch": {
+      "processes": ["Overwatch.exe"],
+      "weapons": {
+        "soldier76": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 75,
+          "description": "Soldier 76 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "tracer": {
+          "pattern": [[0,1], [0,1], [0,1], [0,1], [0,1]],
+          "delay": 50,
+          "description": "Tracer - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "Call of Duty": {
+      "processes": ["cod.exe", "codmw.exe", "codwz.exe"],
+      "weapons": {
+        "m4a1": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 85,
+          "description": "M4A1 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "ak47": {
+          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
+          "delay": 100,
+          "description": "AK-47 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "mp5": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 65,
+          "description": "MP5 - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.2,
+      "default_mode": "MEDIUM"
+    },
+    "Rainbow Six Siege": {
+      "processes": ["RainbowSix.exe", "RainbowSix_Vulkan.exe"],
+      "weapons": {
+        "r4c": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 80,
+          "description": "R4-C - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "ak12": {
+          "pattern": [[0,5], [2,5], [-2,5], [0,5], [2,5]],
+          "delay": 90,
+          "description": "AK-12 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "mp5": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 60,
+          "description": "MP5 - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Battlefield": {
+      "processes": ["bf.exe", "bf2042.exe"],
+      "weapons": {
+        "m4a1": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 85,
+          "description": "M4A1 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "ak12": {
+          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
+          "delay": 95,
+          "description": "AK-12 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "Destiny 2": {
+      "processes": ["Destiny2.exe"],
+      "weapons": {
+        "auto_rifle": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 80,
+          "description": "Auto Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "pulse_rifle": {
+          "pattern": [[0,4], [0,4], [0,4]],
+          "delay": 120,
+          "description": "Pulse Rifle - Burst recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Halo": {
+      "processes": ["HaloInfinite.exe", "Halo.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 75,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "battle_rifle": {
+          "pattern": [[0,4], [0,4], [0,4]],
+          "delay": 100,
+          "description": "Battle Rifle - Burst recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "Counter-Strike 2": {
+      "processes": ["cs2.exe"],
+      "weapons": {
+        "ak47": {
+          "pattern": [[0,6], [2,6], [-2,6], [0,6], [2,6]],
+          "delay": 100,
+          "description": "AK-47 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "m4a1": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 80,
+          "description": "M4A1 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "awp": {
+          "pattern": [[0,10], [0,10]],
+          "delay": 200,
+          "description": "AWP - Sniper recoil",
+          "category": "Sniper",
+          "recoil_level": "Very High"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Team Fortress 2": {
+      "processes": ["hl2.exe"],
+      "weapons": {
+        "minigun": {
+          "pattern": [[0,5], [1,5], [-1,5], [0,5], [1,5]],
+          "delay": 90,
+          "description": "Minigun - High recoil",
+          "category": "LMG",
+          "recoil_level": "High"
+        },
+        "scattergun": {
+          "pattern": [[0,3], [0,3]],
+          "delay": 150,
+          "description": "Scattergun - Shotgun recoil",
+          "category": "Shotgun",
+          "recoil_level": "Medium"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Left 4 Dead 2": {
+      "processes": ["l4d2.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 80,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "smg": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 60,
+          "description": "SMG - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "GTA V": {
+      "processes": ["GTA5.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,3], [1,3], [-1,3], [0,3], [1,3]],
+          "delay": 85,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "smg": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 65,
+          "description": "SMG - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "Red Dead Redemption 2": {
+      "processes": ["RDR2.exe"],
+      "weapons": {
+        "repeater": {
+          "pattern": [[0,4], [0,4]],
+          "delay": 120,
+          "description": "Repeater - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "pistol": {
+          "pattern": [[0,2], [0,2]],
+          "delay": 100,
+          "description": "Pistol - Low recoil",
+          "category": "Pistol",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Cyberpunk 2077": {
+      "processes": ["Cyberpunk2077.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 85,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "smg": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 65,
+          "description": "SMG - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.1,
+      "default_mode": "MEDIUM"
+    },
+    "The Division 2": {
+      "processes": ["TheDivision2.exe"],
+      "weapons": {
+        "assault_rifle": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 85,
+          "description": "Assault Rifle - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "lmg": {
+          "pattern": [[0,5], [1,5], [-1,5], [0,5], [1,5]],
+          "delay": 95,
+          "description": "LMG - High recoil",
+          "category": "LMG",
+          "recoil_level": "High"
+        }
+      },
+      "default_sensitivity": 1.0,
+      "default_mode": "MEDIUM"
+    },
+    "Escape from Tarkov": {
+      "processes": ["EscapeFromTarkov.exe"],
+      "weapons": {
+        "ak74": {
+          "pattern": [[0,5], [2,5], [-2,5], [0,5], [2,5]],
+          "delay": 90,
+          "description": "AK-74 - High recoil",
+          "category": "Rifle",
+          "recoil_level": "High"
+        },
+        "m4a1": {
+          "pattern": [[0,4], [1,4], [-1,4], [0,4], [1,4]],
+          "delay": 80,
+          "description": "M4A1 - Medium recoil",
+          "category": "Rifle",
+          "recoil_level": "Medium"
+        },
+        "mp5": {
+          "pattern": [[0,2], [0,2], [0,2], [0,2], [0,2]],
+          "delay": 60,
+          "description": "MP5 - Low recoil",
+          "category": "SMG",
+          "recoil_level": "Low"
+        }
+      },
+      "default_sensitivity": 1.2,
+      "default_mode": "HIGH"
+    }
+  },
+  "settings": {
+    "default_sensitivity": 1.0,
+    "default_delay": 100,
+    "auto_detect": true,
+    "update_interval": 5000
+  }
+} 
